@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Registration form</h1>
+    <form action="./form2.html">
+      <label for="fname"> first name:</label>
+      <input
+        type="text"
+        name="fname"
+        id="fname"
+        placeholder="enter first name"
+      />
+      <br /><br />
+
+      <label for="lname"> last name :</label>
+      <input type="text" name="lname" id="lname" required /> <br /><br />
+
+      <label for="email"> Email :</label>
+      <input type="email" name="email" id="email" />
+      <input type="submit" value="send" /> <br />
+      <br /><br />
+
+      <label for="password"> password :</label>
+      <input type="password" name="password" id="password" required />
+      <br /><br />
+
+      <label for="DOB"> Date of birth:</label>
+      <input type="date" name="dob" id="DOB" /> <br /><br />
+
+      <label for="phone"> phone number :</label>
+      <input type="tel" name="phone" id="phone" /> <br /><br />
+
+      <label for="age"> Age :</label>
+      <input type="number" name="age" id="age" /> <br /><br />
+
+      <label for="color"> Select color: </label>
+      <input type="color" name="color" id="color" /> <br /><br />
+
+      <label for="Degree"> Select degree</label>
+      <select name="degree" id="Degree">
+        <option value="bca">BCA</option>
+        <option value="bba">BBA</option>
+        <option value="mca">MCA</option>
+        <option value="bcom">Bcom</option>
+      </select>
+      <br /><br />
+
+      <label for="gender"> Gender :</label>
+
+      <label for="Male"> Male </label>
+      <input type="radio" name="gender" id="Male" />
+
+      <label for="Female"> Female</label>
+      <input type="radio" name="gender" id="Female" /> <br /><br />
+
+      <label for="hobbies"> Hobbies : </label>
+
+      <label for="cricket"> cricket :</label>
+      <input type="checkbox" name="cricket" id="cricket" />
+
+      <label for="football"> football :</label>
+      <input type="checkbox" name="football" id="football" />
+
+      <label for="snooker"> snooker :</label>
+      <input type="checkbox" name="snooker" id="snooker" />
+
+      <label for="table tennis"> table tennis : </label>
+      <input type="checkbox" name="table tennis" id="table tennis" />
+      <br /><br />
+
+      <label for="message"> description</label>
+      <textarea name="message" id="message" cols="30" rows="5"></textarea>
+      <br /><br />
+
+      <label for="Courses"> Select Courses</label>
+      <input list="courses" name="courses" />
+      <datalist id="courses">
+        <!-- datalist shows suggestions -->
+        <option value="Designing"></option>
+        <option value="Coding"></option>
+        <option value="Content writing"></option>
+        <option value="Development"></option>
+        <option value="Drawing"></option>
+      </datalist>
+      <br /><br />
+
+      <label for="upload"> upload a file</label>
+      <input type="file" name="file" id="file" multiple /> <br /><br />
+
+      <input type="button" value="submit" />
+      <input type="reset" value="clear" />
+    </form>
+  </body>
+</html>
